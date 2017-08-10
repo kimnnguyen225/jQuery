@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  </head>
+        <script src='http://code.jquery.com/jquery-3.2.1.min.js' type='text/javascript'></script>
+        <script lang='javascript'>
+        $(document).ready(function(){
+          $('#p5').click(function() {
+              $('#p1').css('color','red');
+              $('#p2').css('color','blue');
+              $('#p3').css('color','green');
+              $('#p4').css('color','purple').animate({height: 'toggle'});
+            })
+          });
+        </script>
+  <body>
+    <p id='p1'>This paragraph will turn to red on click</p>
+    <p id='p2'>This paragraph will turn to green on click</p>
+    <p id='p3'>This paragraph will turn to blue on click</p>
+    <p id='p4'>This paragraph will slowly disappear on click</p>
+    <button id='p5'>Click Me</button>
+  </body>
+</html>
